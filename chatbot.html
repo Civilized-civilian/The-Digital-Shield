@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShieldBot | IdentityShield AI</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">🛡 IdentityShield AI</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="learn.html">Learn</a>
+      <a class="active" href="chatbot.html">ShieldBot</a>
+      <a href="game.html">Game</a>
+    </nav>
+  </header>
+
+  <section class="page">
+    <h1>🤖 ShieldBot Assistant</h1>
+    <p class="subtitle">
+      Ask ShieldBot about phishing, scams, deepfakes, password safety, and protecting your online identity.
+    </p>
+
+    <div class="chat-container">
+      <div id="chatWindow" class="chat-window">
+        <div class="bot-message">
+          👋 Hi! I’m ShieldBot. Paste a suspicious message or ask me something like:
+          <br><br>
+          <b>"Is this phishing?"</b> or <b>"How do I protect my art online?"</b>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <input id="chatInput" type="text" placeholder="Type your message here..." />
+        <button id="sendBtn" class="btn primary small">Send</button>
+      </div>
+    </div>
+
+    <div class="analyzer">
+      <h2>🚨 Scam Risk Score Tool</h2>
+      <p>Paste a message below and ShieldBot will score it from 1-10.</p>
+
+      <textarea id="riskInput" placeholder="Paste suspicious email/text here..."></textarea>
+      <button id="analyzeBtn" class="btn secondary small">Analyze</button>
+
+      <div id="riskResult" class="risk-result"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>⚠️ Demo chatbot only. Do not enter personal info.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
