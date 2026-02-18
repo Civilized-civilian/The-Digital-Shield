@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phishing Detective Game | IdentityShield AI</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">🛡 IdentityShield AI</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="learn.html">Learn</a>
+      <a href="chatbot.html">ShieldBot</a>
+      <a class="active" href="game.html">Game</a>
+    </nav>
+  </header>
+
+  <section class="page">
+    <h1>🎮 Phishing Detective</h1>
+    <p class="subtitle">
+      Read the message carefully. Decide if it’s safe or a scam. Score points for correct answers!
+    </p>
+
+    <div class="game-box">
+      <h2>Message:</h2>
+      <div id="gameMessage" class="game-message"></div>
+
+      <div class="game-buttons">
+        <button id="safeBtn" class="btn secondary">✅ Safe</button>
+        <button id="scamBtn" class="btn primary">🚨 Scam</button>
+      </div>
+
+      <div class="scoreboard">
+        <p>✅ Correct: <span id="correctScore">0</span></p>
+        <p>❌ Wrong: <span id="wrongScore">0</span></p>
+      </div>
+
+      <div id="gameFeedback" class="feedback"></div>
+
+      <button id="nextBtn" class="btn secondary small">Next Message ➜</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made for the Girls Who Code Challenge 2025-26 | Cybersecurity + AI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
